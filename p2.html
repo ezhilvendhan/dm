@@ -1,0 +1,99 @@
+<html>
+<head>
+  <title>Problem 2</title>
+  <style>
+    input[type=checkbox] {
+      width:18px;
+      height:18px;
+    }
+
+    input[type=checkbox]:before {
+      content:"";
+      display:inline-block;
+      width:20px;
+      height:20px;
+      background: #FFF url('http://downloads.openmoko.org/developer/sources/hg/hg.mozilla.org/mozilla-central/toolkit/themes/pinstripe/global/icons/checkbox.png') 4 4px no-repeat
+    }
+
+    input[type=checkbox]:checked:before {
+      content:"";
+      display:inline-block;
+      width:20px;
+      height:20px;
+      background: #FFF url('http://downloads.openmoko.org/developer/sources/hg/hg.mozilla.org/mozilla-central/toolkit/themes/pinstripe/global/icons/checkbox.png') -30 4px no-repeat
+    }
+
+    input[type=checkbox]:disabled:before {
+      content:"";
+      display:inline-block;
+      width:20px;
+      height:20px;
+      background: #FFF url('http://downloads.openmoko.org/developer/sources/hg/hg.mozilla.org/mozilla-central/toolkit/themes/pinstripe/global/icons/checkbox.png') -14 4px no-repeat
+    }
+
+    input[type=checkbox]:checked:disabled:before {
+      content:"";
+      display:inline-block;
+      width:20px;
+      height:20px;
+      background: #FFF url('http://downloads.openmoko.org/developer/sources/hg/hg.mozilla.org/mozilla-central/toolkit/themes/pinstripe/global/icons/checkbox.png') -50px 4px no-repeat
+    }
+
+  </style>
+</head>
+
+<body>
+	<div>
+		Demo <br/>
+ <input type="checkbox" name="no label">
+ Enabled
+ </input>
+ <input type="checkbox" name="checked" checked="true" disabled> Checked and Disabled</input>
+ <input type="checkbox" name="checked" disabled>Unchecked and Disabled</input>
+</div
+>
+ <br/>
+ <br/>
+ <div>
+	 Solution
+	 <pre style='color:#000000;background:#ffffff;'><html><body style='color:#000000; background:#ffffff; '><pre>
+	 <span style='color:#800000; font-weight:bold; '>input</span><span style='color:#808030; '>[</span><span style='color:#074726; '>type</span><span style='color:#808030; '>=</span>checkbox<span style='color:#808030; '>]</span> <span style='color:#800080; '>{</span>
+	       <span style='color:#bb7977; font-weight:bold; '>width</span><span style='color:#808030; '>:</span><span style='color:#008c00; '>18</span><span style='color:#006600; '>px</span><span style='color:#800080; '>;</span>
+	       <span style='color:#bb7977; font-weight:bold; '>height</span><span style='color:#808030; '>:</span><span style='color:#008c00; '>18</span><span style='color:#006600; '>px</span><span style='color:#800080; '>;</span>
+	     <span style='color:#800080; '>}</span>
+
+	     <span style='color:#800000; font-weight:bold; '>input</span><span style='color:#808030; '>[</span><span style='color:#074726; '>type</span><span style='color:#808030; '>=</span>checkbox<span style='color:#808030; '>]</span><span style='color:#800080; '>:</span><span style='color:#800000; font-weight:bold; '>before</span> <span style='color:#800080; '>{</span>
+	       <span style='color:#bb7977; font-weight:bold; '>content</span><span style='color:#808030; '>:</span><span style='color:#800000; '>"</span><span style='color:#800000; '>"</span><span style='color:#800080; '>;</span>
+	       <span style='color:#bb7977; font-weight:bold; '>display</span><span style='color:#808030; '>:</span><span style='color:#074726; '>inline-block</span><span style='color:#800080; '>;</span>
+	       <span style='color:#bb7977; font-weight:bold; '>width</span><span style='color:#808030; '>:</span><span style='color:#008c00; '>20</span><span style='color:#006600; '>px</span><span style='color:#800080; '>;</span>
+	       <span style='color:#bb7977; font-weight:bold; '>height</span><span style='color:#808030; '>:</span><span style='color:#008c00; '>20</span><span style='color:#006600; '>px</span><span style='color:#800080; '>;</span>
+	       <span style='color:#bb7977; font-weight:bold; '>background</span><span style='color:#808030; '>:</span> <span style='color:#008c00; '>#</span><span style='color:#008000; '>FFF</span> <span style='color:#400000; '>url</span><span style='color:#808030; '>(</span><span style='color:#0000e6; '>'</span><span style='color:#666616; '>http</span><span style='color:#800080; '>:</span><span style='color:#800000; font-weight:bold; '>//</span><span style='color:#5555dd; '>downloads.openmoko.org</span><span style='color:#40015a; '>/developer/sources/hg/hg.mozilla.org/mozilla-central/toolkit/themes/pinstripe/global/icons/checkbox.png</span><span style='color:#0000e6; '>'</span><span style='color:#808030; '>)</span> <span style='color:#008c00; '>4</span> <span style='color:#008c00; '>4</span><span style='color:#006600; '>px</span> <span style='color:#074726; '>no-repeat</span>
+	     <span style='color:#800080; '>}</span>
+
+	     <span style='color:#800000; font-weight:bold; '>input</span><span style='color:#808030; '>[</span><span style='color:#074726; '>type</span><span style='color:#808030; '>=</span>checkbox<span style='color:#808030; '>]</span><span style='color:#800080; '>:</span>checked<span style='color:#800080; '>:</span><span style='color:#800000; font-weight:bold; '>before</span> <span style='color:#800080; '>{</span>
+	       <span style='color:#bb7977; font-weight:bold; '>content</span><span style='color:#808030; '>:</span><span style='color:#800000; '>"</span><span style='color:#800000; '>"</span><span style='color:#800080; '>;</span>
+	       <span style='color:#bb7977; font-weight:bold; '>display</span><span style='color:#808030; '>:</span><span style='color:#074726; '>inline-block</span><span style='color:#800080; '>;</span>
+	       <span style='color:#bb7977; font-weight:bold; '>width</span><span style='color:#808030; '>:</span><span style='color:#008c00; '>20</span><span style='color:#006600; '>px</span><span style='color:#800080; '>;</span>
+	       <span style='color:#bb7977; font-weight:bold; '>height</span><span style='color:#808030; '>:</span><span style='color:#008c00; '>20</span><span style='color:#006600; '>px</span><span style='color:#800080; '>;</span>
+	       <span style='color:#bb7977; font-weight:bold; '>background</span><span style='color:#808030; '>:</span> <span style='color:#008c00; '>#</span><span style='color:#008000; '>FFF</span> <span style='color:#400000; '>url</span><span style='color:#808030; '>(</span><span style='color:#0000e6; '>'</span><span style='color:#666616; '>http</span><span style='color:#800080; '>:</span><span style='color:#800000; font-weight:bold; '>//</span><span style='color:#5555dd; '>downloads.openmoko.org</span><span style='color:#40015a; '>/developer/sources/hg/hg.mozilla.org/mozilla-central/toolkit/themes/pinstripe/global/icons/checkbox.png</span><span style='color:#0000e6; '>'</span><span style='color:#808030; '>)</span> <span style='color:#808030; '>-</span><span style='color:#008c00; '>30</span> <span style='color:#008c00; '>4</span><span style='color:#006600; '>px</span> <span style='color:#074726; '>no-repeat</span>
+	     <span style='color:#800080; '>}</span>
+
+	     <span style='color:#800000; font-weight:bold; '>input</span><span style='color:#808030; '>[</span><span style='color:#074726; '>type</span><span style='color:#808030; '>=</span>checkbox<span style='color:#808030; '>]</span><span style='color:#800080; '>:</span>disabled<span style='color:#800080; '>:</span><span style='color:#800000; font-weight:bold; '>before</span> <span style='color:#800080; '>{</span>
+	       <span style='color:#bb7977; font-weight:bold; '>content</span><span style='color:#808030; '>:</span><span style='color:#800000; '>"</span><span style='color:#800000; '>"</span><span style='color:#800080; '>;</span>
+	       <span style='color:#bb7977; font-weight:bold; '>display</span><span style='color:#808030; '>:</span><span style='color:#074726; '>inline-block</span><span style='color:#800080; '>;</span>
+	       <span style='color:#bb7977; font-weight:bold; '>width</span><span style='color:#808030; '>:</span><span style='color:#008c00; '>20</span><span style='color:#006600; '>px</span><span style='color:#800080; '>;</span>
+	       <span style='color:#bb7977; font-weight:bold; '>height</span><span style='color:#808030; '>:</span><span style='color:#008c00; '>20</span><span style='color:#006600; '>px</span><span style='color:#800080; '>;</span>
+	       <span style='color:#bb7977; font-weight:bold; '>background</span><span style='color:#808030; '>:</span> <span style='color:#008c00; '>#</span><span style='color:#008000; '>FFF</span> <span style='color:#400000; '>url</span><span style='color:#808030; '>(</span><span style='color:#0000e6; '>'</span><span style='color:#666616; '>http</span><span style='color:#800080; '>:</span><span style='color:#800000; font-weight:bold; '>//</span><span style='color:#5555dd; '>downloads.openmoko.org</span><span style='color:#40015a; '>/developer/sources/hg/hg.mozilla.org/mozilla-central/toolkit/themes/pinstripe/global/icons/checkbox.png</span><span style='color:#0000e6; '>'</span><span style='color:#808030; '>)</span> <span style='color:#808030; '>-</span><span style='color:#008c00; '>14</span> <span style='color:#008c00; '>4</span><span style='color:#006600; '>px</span> <span style='color:#074726; '>no-repeat</span>
+	     <span style='color:#800080; '>}</span>
+
+	     <span style='color:#800000; font-weight:bold; '>input</span><span style='color:#808030; '>[</span><span style='color:#074726; '>type</span><span style='color:#808030; '>=</span>checkbox<span style='color:#808030; '>]</span><span style='color:#800080; '>:</span>checked<span style='color:#800080; '>:</span>disabled<span style='color:#800080; '>:</span><span style='color:#800000; font-weight:bold; '>before</span> <span style='color:#800080; '>{</span>
+	       <span style='color:#bb7977; font-weight:bold; '>content</span><span style='color:#808030; '>:</span><span style='color:#800000; '>"</span><span style='color:#800000; '>"</span><span style='color:#800080; '>;</span>
+	       <span style='color:#bb7977; font-weight:bold; '>display</span><span style='color:#808030; '>:</span><span style='color:#074726; '>inline-block</span><span style='color:#800080; '>;</span>
+	       <span style='color:#bb7977; font-weight:bold; '>width</span><span style='color:#808030; '>:</span><span style='color:#008c00; '>20</span><span style='color:#006600; '>px</span><span style='color:#800080; '>;</span>
+	       <span style='color:#bb7977; font-weight:bold; '>height</span><span style='color:#808030; '>:</span><span style='color:#008c00; '>20</span><span style='color:#006600; '>px</span><span style='color:#800080; '>;</span>
+	       <span style='color:#bb7977; font-weight:bold; '>background</span><span style='color:#808030; '>:</span> <span style='color:#008c00; '>#</span><span style='color:#008000; '>FFF</span> <span style='color:#400000; '>url</span><span style='color:#808030; '>(</span><span style='color:#0000e6; '>'</span><span style='color:#666616; '>http</span><span style='color:#800080; '>:</span><span style='color:#800000; font-weight:bold; '>//</span><span style='color:#5555dd; '>downloads.openmoko.org</span><span style='color:#40015a; '>/developer/sources/hg/hg.mozilla.org/mozilla-central/toolkit/themes/pinstripe/global/icons/checkbox.png</span><span style='color:#0000e6; '>'</span><span style='color:#808030; '>)</span> <span style='color:#808030; '>-</span><span style='color:#008c00; '>50</span><span style='color:#006600; '>px</span> <span style='color:#008c00; '>4</span><span style='color:#006600; '>px</span> <span style='color:#074726; '>no-repeat</span>
+	     <span style='color:#800080; '>}</span>
+	 </pre>
+</div>
+</body>
+</html>
